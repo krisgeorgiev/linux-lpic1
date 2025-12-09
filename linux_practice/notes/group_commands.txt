@@ -1,0 +1,7 @@
+sudo groupadd team1
+sudo useradd -m -s /bin/bash userA
+sudo useradd -m -s /bin/bash userB
+sudo usermod -aG team1 userA
+sudo usermod -aG team1 userB
+sudo usermod -s /bin/sh userB
+

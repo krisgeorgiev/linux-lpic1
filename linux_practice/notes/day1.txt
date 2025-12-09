@@ -1,0 +1,5 @@
+day1 hello
+
+Linux is fun.
+Learning Linux step by step.
+Permissions are important in Linux.

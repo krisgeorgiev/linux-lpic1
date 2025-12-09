@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "$USER"
+echo $(date)
+echo "$SHELL"
+echo $(ps -e --no-header | wc -l)

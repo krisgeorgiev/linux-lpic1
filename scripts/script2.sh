@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+for l in $@; do echo "$l"
+
+done

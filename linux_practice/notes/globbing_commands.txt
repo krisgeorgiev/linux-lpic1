@@ -1,0 +1,3 @@
+ls -l notes/*.log
+ls logs/ | grep "^app.*"
+ls logs/ | grep ".*01.log"
