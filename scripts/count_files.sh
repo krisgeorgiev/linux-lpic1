@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This is script for counting files
+# This is script for counting files in given directory
 
 # Path to directory
 path=/home/kristian/linux_practice
