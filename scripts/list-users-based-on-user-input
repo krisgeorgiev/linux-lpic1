@@ -16,7 +16,7 @@ echo "Please enter date (e.g. 28)"
 read da
 echo
 
-# Handle spacing for single-digit dates (important!)
+# Handles spacing for single-digit dates
 if [ "$da" -lt 10 ]; then
     da=" $da"
 fi
