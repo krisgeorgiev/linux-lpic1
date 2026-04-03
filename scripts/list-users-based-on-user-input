@@ -1,0 +1,28 @@
+#!/bin/bash
+# Author: Kristian Georgiev
+# Date: $(date)
+# Description: This script lists users logged in based on user input (day, month, date)
+# Modified:
+
+echo "Please enter day (e.g. Mon)"
+read d
+echo
+
+echo "Please enter month (e.g. Aug)"
+read m
+echo
+
+echo "Please enter date (e.g. 28)"
+read da
+echo
+
+# Handle spacing for single-digit dates (important!)
+if [ "$da" -lt 10 ]; then
+    da=" $da"
+fi
+
+last | grep "$d $m $da"
+
+if [ $? -ne 0 ]; then
+    echo "No user logged on that day!"
+fi
