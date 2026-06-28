@@ -1,0 +1,10 @@
+#!/bin/bash
+
+USAGE=$(df / | awk 'NR==2 {print $5}' | tr -d '%')
+
+if [ "$USAGE" -gt 80 ]
+then
+    echo "Disk Usage is High: ${USAGE}%"
+else
+    echo "Disk Usage is OK: ${USAGE}%"
+fi

@@ -10,7 +10,7 @@ then
 else
 	
         for x in $@; do
-	    mkdir /home/$USER/LPIC1/script/$x 
+	    mkdir /home/$USER/LPIC1/scripts/$x 
 	echo "directory $x created succesfully!"
 	done
 fi
